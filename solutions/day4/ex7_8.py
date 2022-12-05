@@ -1,5 +1,7 @@
 def parse_input(line: str) -> dict[int, int]:
-    data = list(map(int, line.replace("\n", "").replace(",", " ").replace("-", " ").split(" ")))
+    data = list(
+        map(int, line.replace("\n", "").replace(",", " ").replace("-", " ").split(" "))
+    )
     return {data[0]: data[1], data[2]: data[3]}
 
 
