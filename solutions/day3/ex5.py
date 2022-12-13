@@ -13,8 +13,8 @@ def clear_line(line: str) -> str:
 
 
 def get_common_char_priority(line: str) -> int:
-    for char in line[(len(line) // 2):]:
-        if char in line[:(len(line) // 2)]:
+    for char in line[(len(line) // 2) :]:
+        if char in line[: (len(line) // 2)]:
             return get_priority(char)
 
 

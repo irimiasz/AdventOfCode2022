@@ -26,7 +26,7 @@ def calculate_priority():
         for line in input_file.readlines():
             cnt += 1
             for c in clear_line(line):
-                LETTER_MAP[c][cnt%3-1] = True
+                LETTER_MAP[c][cnt % 3 - 1] = True
             if cnt % 3 == 0:
                 for k, v in LETTER_MAP.items():
                     if False not in v:
