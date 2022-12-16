@@ -106,7 +106,7 @@ def shortest_path_for_lowest_points(matrix) -> int:
     start_points = find_lowest_points(matrix)
     for start_point in start_points:
         path = shortest_path(matrix, start_point)
-        if 0 < ypath < lowest:
+        if 0 < path < lowest:
             lowest = path
     return lowest
 
